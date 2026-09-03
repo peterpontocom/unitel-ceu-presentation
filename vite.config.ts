@@ -30,6 +30,11 @@ export default defineConfig(({ command, isPreview }) => ({
           nitro({
             preset: "vercel",
             serverDir: "./server",
+            rollupConfig: {
+              output: {
+                inlineDynamicImports: true,
+              },
+            },
           }),
         ]
       : []),
