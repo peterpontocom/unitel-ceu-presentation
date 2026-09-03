@@ -57,18 +57,14 @@ export function UnitelMark({
   showWordmark?: boolean;
 }) {
   return (
-    <span className={cn("inline-flex items-center gap-[0.34em] leading-none align-middle", className)}>
-      <UnitelGlyph className={iconClassName} />
-      {showWordmark && (
-        <span
-          className={cn(
-            "font-display font-black lowercase tracking-tight",
-            wordmarkClassName,
-          )}
-        >
-          unitel
-        </span>
+    <span
+      className={cn(
+        "inline-flex items-center leading-none align-middle",
+        className,
+        wordmarkClassName,
       )}
+    >
+      <UnitelGlyph className={iconClassName} />
     </span>
   );
 }
@@ -85,18 +81,14 @@ export function CeuMark({
   showWordmark?: boolean;
 }) {
   return (
-    <span className={cn("inline-flex items-center gap-[0.36em] leading-none align-middle", className)}>
-      <CeuGlyph className={iconClassName} />
-      {showWordmark && (
-        <span
-          className={cn(
-            "font-display font-extrabold tracking-[0.14em]",
-            wordmarkClassName,
-          )}
-        >
-          CEU
-        </span>
+    <span
+      className={cn(
+        "inline-flex items-center leading-none align-middle",
+        className,
+        wordmarkClassName,
       )}
+    >
+      <CeuGlyph className={iconClassName} />
     </span>
   );
 }
