@@ -33,7 +33,7 @@ export function CeuGlyph({
 }) {
   return (
     <img
-      src="/ceu-icon-logo.svg"
+      src="/ceu-icon-logo.png"
       alt={alt}
       className={cn(
         "inline-block h-[1.12em] w-[1.28em] shrink-0 object-contain select-none align-middle",
@@ -66,7 +66,7 @@ export function UnitelMark({
             wordmarkClassName,
           )}
         >
-          unitel
+          UNITEL
         </span>
       )}
     </span>
