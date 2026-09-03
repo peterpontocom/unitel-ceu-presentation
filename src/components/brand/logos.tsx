@@ -47,58 +47,24 @@ export function CeuGlyph({
 
 export function UnitelMark({
   className,
-  wordmarkClassName,
   iconClassName,
-  showWordmark = true,
 }: {
   className?: string;
-  wordmarkClassName?: string;
   iconClassName?: string;
-  showWordmark?: boolean;
 }) {
   return (
-    <span className={cn("inline-flex items-center gap-[0.34em] leading-none align-middle", className)}>
-      <UnitelGlyph className={iconClassName} />
-      {showWordmark && (
-        <span
-          className={cn(
-            "font-display font-black lowercase tracking-tight",
-            wordmarkClassName,
-          )}
-        >
-          UNITEL
-        </span>
-      )}
-    </span>
+    <UnitelGlyph className={cn("h-[1.15em] w-[1.15em]", className, iconClassName)} />
   );
 }
 
 export function CeuMark({
   className,
-  wordmarkClassName,
   iconClassName,
-  showWordmark = true,
 }: {
   className?: string;
-  wordmarkClassName?: string;
   iconClassName?: string;
-  showWordmark?: boolean;
 }) {
-  return (
-    <span className={cn("inline-flex items-center gap-[0.36em] leading-none align-middle", className)}>
-      <CeuGlyph className={iconClassName} />
-      {showWordmark && (
-        <span
-          className={cn(
-            "font-display font-extrabold tracking-[0.14em]",
-            wordmarkClassName,
-          )}
-        >
-          CEU
-        </span>
-      )}
-    </span>
-  );
+  return <CeuGlyph className={cn("h-[1.12em] w-[1.28em]", className, iconClassName)} />;
 }
 
 export function BrandLockup({

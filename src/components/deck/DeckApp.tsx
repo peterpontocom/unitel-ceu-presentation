@@ -1,6 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { ChevronLeft, ChevronRight, Maximize2, Minimize2, Printer } from "lucide-react";
-import { BrandLockup } from "@/components/brand/logos";
 import { SLIDES } from "@/components/deck/slides";
 import { cn } from "@/lib/cn";
 
@@ -108,12 +107,9 @@ export function DeckApp() {
         className="no-print flex items-center justify-between gap-3 px-3 py-2 sm:px-5"
         aria-label="Navegação da apresentação"
       >
-        <div className="flex min-w-0 items-center gap-3">
-          <button type="button" className="chrome-btn" onClick={prev} disabled={index === 0} aria-label="Slide anterior">
-            <ChevronLeft className="size-5" />
-          </button>
-          <BrandLockup size="sm" className="hide-compact shrink-0 text-white" />
-        </div>
+        <button type="button" className="chrome-btn" onClick={prev} disabled={index === 0} aria-label="Slide anterior">
+          <ChevronLeft className="size-5" />
+        </button>
 
         <div className="flex min-w-0 flex-1 flex-col items-center gap-1.5">
           <p className="truncate font-display text-[0.72rem] font-semibold tracking-wide text-white/70">
