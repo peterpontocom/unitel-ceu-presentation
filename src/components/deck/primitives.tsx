@@ -140,7 +140,7 @@ export function Lead({
 
 export function IconOrb({
   icon: Icon,
-  accent = "orange",
+  accent = "blue",
   size = "md",
 }: {
   icon: LucideIcon;
@@ -172,7 +172,7 @@ export function FeatureCard({
   body,
   tag,
   featured = false,
-  accent = "orange",
+  accent = "blue",
 }: {
   n?: string;
   icon: LucideIcon;
@@ -245,7 +245,7 @@ export function Torn({ tone }: { tone: "orange" | "blue" }) {
 
 export function StepFlow({
   steps,
-  accent = "orange",
+  accent = "blue",
 }: {
   steps: { icon: LucideIcon; label: string; sub?: string }[];
   accent?: "orange" | "blue";

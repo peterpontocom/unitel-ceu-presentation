@@ -16,7 +16,7 @@ export const Route = createRootRoute({
         content:
           "Proposta de parceria estratégica UNITEL + CEU — Operadora Oficial da Comunidade Universitária de Angola.",
       },
-      { name: "theme-color", content: "#FF6B00" },
+      { name: "theme-color", content: "#2155FF" },
     ],
     links: [
       { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },

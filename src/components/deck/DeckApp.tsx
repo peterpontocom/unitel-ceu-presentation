@@ -127,7 +127,7 @@ export function DeckApp() {
                 onClick={() => go(i)}
                 className={cn(
                   "h-1.5 rounded-full transition-all duration-150",
-                  i === index ? "w-6 bg-unitel" : "w-1.5 bg-white/25 hover:bg-white/50",
+                  i === index ? "w-6 bg-ceu" : "w-1.5 bg-white/25 hover:bg-white/50",
                 )}
               />
             ))}

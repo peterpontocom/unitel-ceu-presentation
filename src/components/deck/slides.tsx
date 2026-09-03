@@ -61,7 +61,7 @@ function Art({
 
 function SlideCover() {
   return (
-    <Slide theme="orange">
+    <Slide theme="blue">
       <div className="flex flex-1 flex-col items-center justify-center text-center">
         <CoverBadge />
         <p className="mt-[clamp(1.2rem,3cqi,1.8rem)] max-w-md font-display text-[clamp(1rem,2.2cqi,1.35rem)] font-semibold leading-snug text-white">
@@ -120,7 +120,7 @@ function SlideOpportunity() {
         universitária de cada estudante.
       </Lead>
       <StepFlow
-        accent="orange"
+        accent="blue"
         steps={[
           { icon: Shield, label: "Cartão oficial", sub: "Selo MESCTI 2026" },
           { icon: GraduationCap, label: "Adesão nacional", sub: "Todas as IES" },
@@ -136,7 +136,7 @@ function SlideOpportunity() {
 function SlideVision() {
   return (
     <SplitShell
-      tone="orange"
+      tone="blue"
       visual={
         <div className="relative h-full min-h-52">
           <Art
@@ -144,8 +144,8 @@ function SlideVision() {
             alt="Colagem gráfica de capelo, livro, telemóvel e maleta sobre fundo laranja"
             className="absolute inset-0 size-full"
           />
-          <div className="absolute inset-x-0 top-0 h-[32%] bg-linear-to-b from-unitel via-unitel/80 to-transparent" />
-          <div className="absolute inset-x-0 bottom-0 h-[48%] bg-linear-to-t from-unitel via-unitel/90 to-transparent" />
+          <div className="absolute inset-x-0 top-0 h-[32%] bg-linear-to-b from-ceu via-ceu/80 to-transparent" />
+          <div className="absolute inset-x-0 bottom-0 h-[48%] bg-linear-to-t from-ceu via-ceu/90 to-transparent" />
           <div className="relative z-10 flex h-full flex-col justify-end pad-slide">
             <p className="text-hero text-cream">
               liga
@@ -166,13 +166,13 @@ function SlideVision() {
         UNITEL e a próxima geração de profissionais, empreendedores e líderes de Angola.
       </Lead>
       <ul className="mt-auto">
-        <ListRow icon={Radio} accent="orange">
+        <ListRow icon={Radio} accent="blue">
           Operadora Oficial da Comunidade Universitária de Angola
         </ListRow>
-        <ListRow icon={Wifi} accent="orange">
+        <ListRow icon={Wifi} accent="blue">
           Conectividade, inclusão financeira e benefícios exclusivos
         </ListRow>
-        <ListRow icon={Sparkles} accent="orange">
+        <ListRow icon={Sparkles} accent="blue">
           A marca que acompanha o estudante durante 4 anos de jornada
         </ListRow>
       </ul>
@@ -190,19 +190,19 @@ function SlideAudience() {
             <h2 className="font-display text-[clamp(1.05rem,2cqi,1.35rem)] font-extrabold text-ink">
               Público principal
             </h2>
-            <Pill tone="orange">Foco</Pill>
+            <Pill tone="blue">Foco</Pill>
           </div>
           <ul>
-            <ListRow icon={GraduationCap} accent="orange">
+            <ListRow icon={GraduationCap} accent="blue">
               Estudantes do ensino superior em Angola
             </ListRow>
-            <ListRow icon={Users} accent="orange">
+            <ListRow icon={Users} accent="blue">
               Jovens em fase de escolha académica e profissional
             </ListRow>
-            <ListRow icon={Target} accent="orange">
+            <ListRow icon={Target} accent="blue">
               Nova geração de profissionais, empreendedores e líderes
             </ListRow>
-            <ListRow icon={Briefcase} accent="orange">
+            <ListRow icon={Briefcase} accent="blue">
               Jovens a entrar no mercado de trabalho
             </ListRow>
           </ul>
@@ -215,19 +215,19 @@ function SlideAudience() {
             <Pill>Parceiros</Pill>
           </div>
           <ul>
-            <ListRow icon={Building2} accent="orange">
+            <ListRow icon={Building2} accent="blue">
               Instituições de ensino superior
             </ListRow>
-            <ListRow icon={Landmark} accent="orange">
+            <ListRow icon={Landmark} accent="blue">
               MESCTI e rede nacional CEU
             </ListRow>
-            <ListRow icon={Handshake} accent="orange">
+            <ListRow icon={Handshake} accent="blue">
               Parceiros comerciais e benefícios no terreno
             </ListRow>
-            <ListRow icon={Rocket} accent="orange">
+            <ListRow icon={Rocket} accent="blue">
               Empresas e startups ligadas à comunidade
             </ListRow>
-            <ListRow icon={Heart} accent="orange">
+            <ListRow icon={Heart} accent="blue">
               Pais e encarregados de educação
             </ListRow>
           </ul>
@@ -286,7 +286,7 @@ function SlideModel() {
 function SlideFlow() {
   return (
     <SplitShell
-      tone="orange"
+      tone="blue"
       visual={
         <div className="relative flex h-full min-h-52 flex-col justify-between pad-slide">
           <div />
@@ -374,7 +374,7 @@ function SlideRevenue() {
       </Lead>
       <div className="mt-auto grid flex-1 grid-cols-1 gap-4 pt-[clamp(1rem,2.4cqi,1.6rem)] md:grid-cols-2">
         <article className="flex h-full flex-col rounded-card bg-white p-[clamp(1.1rem,2.6cqi,1.8rem)] shadow-(--shadow-border)">
-          <p className="text-kicker text-unitel">Fase inicial</p>
+          <p className="text-kicker text-ceu">Fase inicial</p>
           <p className="mt-3 font-display text-[clamp(2.1rem,5.4cqi,3.6rem)] font-extrabold leading-none tracking-tight text-ink">
             150 M Kz
           </p>
@@ -382,7 +382,7 @@ function SlideRevenue() {
             50.000 estudantes × 3.000 Kz em recargas Unitel.
           </p>
         </article>
-        <article className="flex h-full flex-col rounded-card bg-unitel p-[clamp(1.1rem,2.6cqi,1.8rem)] text-white">
+        <article className="flex h-full flex-col rounded-card bg-ceu p-[clamp(1.1rem,2.6cqi,1.8rem)] text-white">
           <p className="text-kicker text-white/80">Potencial de escala</p>
           <p className="mt-3 font-display text-[clamp(2.1rem,5.4cqi,3.6rem)] font-extrabold leading-none tracking-tight">
             360 M Kz
@@ -417,7 +417,7 @@ function SlideVisibility() {
             key={item.title}
             className="flex h-full flex-col rounded-tile bg-white p-[clamp(0.85rem,1.8cqi,1.2rem)] shadow-(--shadow-border)"
           >
-            <IconOrb icon={item.icon} accent="orange" size="sm" />
+            <IconOrb icon={item.icon} accent="blue" size="sm" />
             <h3 className="mt-3 text-card-title text-ink">{item.title}</h3>
             <p className="mt-1 text-card-body text-ink-soft">{item.body}</p>
           </article>
@@ -446,7 +446,7 @@ function SlideKpis() {
             key={kpi.label}
             className="flex h-full flex-col items-center rounded-card bg-white px-3 py-[clamp(1rem,2.2cqi,1.5rem)] text-center shadow-(--shadow-border)"
           >
-            <IconOrb icon={kpi.icon} accent="orange" />
+            <IconOrb icon={kpi.icon} accent="blue" />
             <p className="mt-3 font-display text-[clamp(1.35rem,2.8cqi,1.9rem)] font-extrabold leading-none tracking-tight text-ink">
               {kpi.value}
             </p>
@@ -515,7 +515,7 @@ function SlideBenefits() {
 function SlideCampaign() {
   return (
     <SplitShell
-      tone="orange"
+      tone="blue"
       visual={
         <div className="relative h-full min-h-52">
           <Art
@@ -540,7 +540,7 @@ function SlideCampaign() {
         {["Conectividade", "Educação", "Inclusão", "Oportunidades"].map((tag) => (
           <span
             key={tag}
-            className="rounded-full bg-cream px-3 py-1.5 font-display text-[0.72rem] font-bold text-unitel"
+            className="rounded-full bg-paper px-3 py-1.5 font-display text-[0.72rem] font-bold text-ceu"
           >
             {tag}
           </span>
@@ -552,11 +552,11 @@ function SlideCampaign() {
 
 function SlideContact() {
   return (
-    <Slide theme="orange" flush>
+    <Slide theme="blue" flush>
       <div className="relative flex min-h-48 flex-[0.55] flex-col items-center justify-center pad-slide">
         <div className="dot-field" />
         <div className="relative z-10 rounded-4xl bg-white px-[8%] py-[7%] text-center shadow-[0_24px_60px_-28px_rgb(80,20,0,0.45)]">
-          <div className="flex justify-center text-[clamp(1.8rem,5.4cqi,3.2rem)] text-unitel">
+          <div className="flex justify-center text-[clamp(1.8rem,5.4cqi,3.2rem)] text-ceu">
             <UnitelMark />
           </div>
           <div className="mt-3 flex items-center justify-center gap-3 text-ink">
@@ -578,7 +578,7 @@ function SlideContact() {
           Juntos, ligamos a próxima geração ao seu futuro.
         </p>
         <div className="mt-6 inline-flex w-fit overflow-hidden rounded-full">
-          <span className="bg-unitel px-5 py-3 font-display text-[clamp(0.72rem,1.2cqi,0.82rem)] font-bold tracking-wide text-white">
+          <span className="bg-ceu px-5 py-3 font-display text-[clamp(0.72rem,1.2cqi,0.82rem)] font-bold tracking-wide text-white">
             CONTACTOS
           </span>
           <a

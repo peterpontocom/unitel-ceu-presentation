@@ -14,7 +14,7 @@ var install_page_default = "<!DOCTYPE html>\n<html lang=\"en\" class=\"device-de
 var grokOgIdentity = { "site": {
 	"title": "UNITEL × CEU",
 	"card": "custom",
-	"color": "FF6B00",
+	"color": "2155FF",
 	"image": "/og.jpg"
 } };
 //#endregion
