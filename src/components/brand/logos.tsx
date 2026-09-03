@@ -33,7 +33,7 @@ export function CeuGlyph({
 }) {
   return (
     <img
-      src="/ceu-icon-logo.png"
+      src="/ceu-icon-logo.svg"
       alt={alt}
       className={cn(
         "inline-block h-[1.12em] w-[1.28em] shrink-0 object-contain select-none align-middle",
@@ -53,7 +53,9 @@ export function UnitelMark({
   iconClassName?: string;
 }) {
   return (
-    <UnitelGlyph className={cn("h-[1.15em] w-[1.15em]", className, iconClassName)} />
+    <span className={cn("inline-flex items-center leading-none align-middle", className)}>
+      <UnitelGlyph className={cn("h-[1.7em] w-[1.7em]", iconClassName)} />
+    </span>
   );
 }
 
@@ -64,7 +66,11 @@ export function CeuMark({
   className?: string;
   iconClassName?: string;
 }) {
-  return <CeuGlyph className={cn("h-[1.12em] w-[1.28em]", className, iconClassName)} />;
+  return (
+    <span className={cn("inline-flex items-center leading-none align-middle", className)}>
+      <CeuGlyph className={cn("h-[1.7em] w-[1.96em]", iconClassName)} />
+    </span>
+  );
 }
 
 export function BrandLockup({
