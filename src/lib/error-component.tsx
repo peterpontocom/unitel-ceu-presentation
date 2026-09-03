@@ -13,7 +13,7 @@ export function AppErrorComponent({ error }: ErrorComponentProps) {
         <TriangleAlert className="size-10" strokeWidth={2} />
       </span>
       <h1 className="text-lg font-semibold">Something went wrong</h1>
-      <p className="max-w-md text-sm break-words text-zinc-500 dark:text-zinc-400">
+      <p className="max-w-md text-sm wrap-break-word text-zinc-500 dark:text-zinc-400">
         {error.message || "An unexpected error occurred. Try reloading the page."}
       </p>
     </main>

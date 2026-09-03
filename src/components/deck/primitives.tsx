@@ -128,7 +128,7 @@ export function Lead({
   return (
     <p
       className={cn(
-        "mt-[0.55em] max-w-[46rem] text-lead",
+        "mt-[0.55em] max-w-184 text-lead",
         light ? "text-white/88" : "text-ink-soft",
         className,
       )}
@@ -191,7 +191,7 @@ export function FeatureCard({
           ? accent === "blue"
             ? "bg-ceu text-white"
             : "bg-unitel text-white"
-          : "bg-white text-ink shadow-[var(--shadow-border)]",
+          : "bg-white text-ink shadow-(--shadow-border)",
       )}
     >
       <div className="mb-3 flex items-start justify-between gap-3">

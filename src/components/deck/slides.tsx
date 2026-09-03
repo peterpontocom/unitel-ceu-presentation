@@ -64,7 +64,7 @@ function SlideCover() {
     <Slide theme="orange">
       <div className="flex flex-1 flex-col items-center justify-center text-center">
         <CoverBadge />
-        <p className="mt-[clamp(1.2rem,3cqi,1.8rem)] max-w-[28rem] font-display text-[clamp(1rem,2.2cqi,1.35rem)] font-semibold leading-snug text-white">
+        <p className="mt-[clamp(1.2rem,3cqi,1.8rem)] max-w-md font-display text-[clamp(1rem,2.2cqi,1.35rem)] font-semibold leading-snug text-white">
           Conectando a próxima geração de líderes de Angola
         </p>
       </div>
@@ -373,7 +373,7 @@ function SlideRevenue() {
         comunidade universitária nacional.
       </Lead>
       <div className="mt-auto grid flex-1 grid-cols-1 gap-4 pt-[clamp(1rem,2.4cqi,1.6rem)] md:grid-cols-2">
-        <article className="flex h-full flex-col rounded-card bg-white p-[clamp(1.1rem,2.6cqi,1.8rem)] shadow-[var(--shadow-border)]">
+        <article className="flex h-full flex-col rounded-card bg-white p-[clamp(1.1rem,2.6cqi,1.8rem)] shadow-(--shadow-border)">
           <p className="text-kicker text-unitel">Fase inicial</p>
           <p className="mt-3 font-display text-[clamp(2.1rem,5.4cqi,3.6rem)] font-extrabold leading-none tracking-tight text-ink">
             150 M Kz
@@ -415,7 +415,7 @@ function SlideVisibility() {
         {items.map((item) => (
           <article
             key={item.title}
-            className="flex h-full flex-col rounded-tile bg-white p-[clamp(0.85rem,1.8cqi,1.2rem)] shadow-[var(--shadow-border)]"
+            className="flex h-full flex-col rounded-tile bg-white p-[clamp(0.85rem,1.8cqi,1.2rem)] shadow-(--shadow-border)"
           >
             <IconOrb icon={item.icon} accent="orange" size="sm" />
             <h3 className="mt-3 text-card-title text-ink">{item.title}</h3>
@@ -444,7 +444,7 @@ function SlideKpis() {
         {kpis.map((kpi) => (
           <article
             key={kpi.label}
-            className="flex h-full flex-col items-center rounded-card bg-white px-3 py-[clamp(1rem,2.2cqi,1.5rem)] text-center shadow-[var(--shadow-border)]"
+            className="flex h-full flex-col items-center rounded-card bg-white px-3 py-[clamp(1rem,2.2cqi,1.5rem)] text-center shadow-(--shadow-border)"
           >
             <IconOrb icon={kpi.icon} accent="orange" />
             <p className="mt-3 font-display text-[clamp(1.35rem,2.8cqi,1.9rem)] font-extrabold leading-none tracking-tight text-ink">
@@ -532,7 +532,7 @@ function SlideCampaign() {
         Compra uma recarga Unitel de 3.000 Kz e recebe o teu Cartão Nacional de Estudante
         Universitário com vários benefícios.
       </Lead>
-      <p className="mt-4 max-w-[38rem] text-lead text-ink-soft">
+      <p className="mt-4 max-w-152 text-lead text-ink-soft">
         Uma iniciativa que une conectividade, educação, inclusão financeira e oportunidades para
         milhares de estudantes em todo o país.
       </p>
@@ -555,7 +555,7 @@ function SlideContact() {
     <Slide theme="orange" flush>
       <div className="relative flex min-h-48 flex-[0.55] flex-col items-center justify-center pad-slide">
         <div className="dot-field" />
-        <div className="relative z-10 rounded-[2rem] bg-white px-[8%] py-[7%] text-center shadow-[0_24px_60px_-28px_rgb(80,20,0,0.45)]">
+        <div className="relative z-10 rounded-4xl bg-white px-[8%] py-[7%] text-center shadow-[0_24px_60px_-28px_rgb(80,20,0,0.45)]">
           <div className="flex justify-center text-[clamp(1.8rem,5.4cqi,3.2rem)] text-unitel">
             <UnitelMark />
           </div>
@@ -570,11 +570,11 @@ function SlideContact() {
         </div>
       </div>
       <div className="relative flex flex-[0.45] flex-col justify-center bg-white px-[clamp(1.2rem,4.5cqi,3.6rem)] py-[clamp(1.2rem,3cqi,2.2rem)] text-ink">
-        <p className="max-w-[40rem] text-lead">
+        <p className="max-w-160 text-lead">
           A UNITEL como Operadora Oficial da Comunidade Universitária de Angola — uma parceria com
           impacto comercial, institucional e social, capaz de gerar valor para ambas as organizações.
         </p>
-        <p className="mt-3 max-w-[40rem] font-display text-[clamp(0.95rem,1.7cqi,1.15rem)] font-bold text-ink">
+        <p className="mt-3 max-w-160 font-display text-[clamp(0.95rem,1.7cqi,1.15rem)] font-bold text-ink">
           Juntos, ligamos a próxima geração ao seu futuro.
         </p>
         <div className="mt-6 inline-flex w-fit overflow-hidden rounded-full">
