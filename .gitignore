@@ -1,0 +1,91 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+.yarn/
+.npm/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.local
+
+# Build and coverage output
+dist/
+build/
+coverage/
+.vite/
+.cache/
+.parcel-cache/
+.turbo/
+
+# Framework and deployment caches
+.tanstack/
+.vercel/
+.netlify/
+
+# Generated local app data and artifacts
+.grok/app-env.json
+.grok/og-pending
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# Logs and runtime files
+*.log
+logs/
+.pids/
+*.pid
+*.pid.lock
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Test and browser output
+playwright-report/
+test-results/
+blob-report/
+
+# Temporary files
+.tmp/
+tmp/
+.cache-loader/
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+
+# Linux
+.directory
+
+# Editors and IDEs
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/tasks.json
+!.vscode/launch.json
+*.code-workspace
+
+# TypeScript incremental build info
+*.tsbuildinfo
+
+# Local project metadata
+.project_id
+.node_modules.lock
